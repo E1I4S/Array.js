@@ -22,10 +22,10 @@ function sumarPares(numeros) {
 // 3. Buscar en Arrays
 // 3.1 Escribe una función llamada `palabrasTerminanConA` que reciba un array de palabras y devuelva `true` si todas terminan con "a", o `false` si al menos una no lo hace.
 function palabrasTerminanConA(palabras) {
-    palabras.every(palabras=>palabras.endwith("a"))
+    palabras.every(palabras=>palabras.endsWith("a"))
 }
 
-const palabras = ['casa', 'silla', 'mesa']
+const palabras = ["casa", "silla", "mesa"]
 console.log(palabrasTerminanConA(palabras)) // -> true
 
 // 4. Transformar Arrays
