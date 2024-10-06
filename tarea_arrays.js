@@ -22,7 +22,7 @@ function sumarPares(numeros) {
 // 3. Buscar en Arrays
 // 3.1 Escribe una función llamada `palabrasTerminanConA` que reciba un array de palabras y devuelva `true` si todas terminan con "a", o `false` si al menos una no lo hace.
 function palabrasTerminanConA(palabras) {
-    palabras.every(palabras=>palabras.endsWith("a"))
+    return palabras.every(palabras=>palabras.endsWith("a"))
 }
 
 const palabras = ["casa", "silla", "mesa"]
@@ -49,7 +49,7 @@ console.log(buscaPalabras(words, 'mundo')) // El resultado debe ser: ['javascrip
 function findJavaScript(matrix) {
     for (let cont= 0; cont < matrix.length; cont=cont+1) {
         for (let cont2 = 0; cont2 < matrix[cont].length; cont2=cont2+1) {
-       if(matrix[cont][cont2=="JavaScript"]){
+       if(matrix[cont][cont2]=="JavaScript"]){
         return [cont,cont2]
        }
         }
@@ -61,7 +61,7 @@ const matrix = [
     ['HTML', 'CSS', 'JavaScript'],
     ['Java', 'C++', 'Python'],
     ['Ruby', 'Go', 'Swift']
-  ]
+  ];
   
   const position = findJavaScript(matrix);
   console.log(position); // -> [0, 2]
@@ -71,22 +71,22 @@ const matrix = [
 // La función debe devolver un array con dos posiciones: el índice del libro con menos páginas y el índice del libro con más páginas.
 function findMinMaxPages(books) {
     if (books.length === 0) {
-        return [-1, -1]; // Si el array está vacío, devuelve [-1, -1]
+        return [-1, -1];
     }
 
-    let minpages = 0; // Inicializa el índice del libro con menos páginas
-    let maxpages = 0; // Inicializa el índice del libro con más páginas
+    let minpages = 0; 
+    let maxpages = 0; 
 
     for (let cont= 1; cont < books.length; cont=cont+1) {
         if (books[cont] < books[minpages]) {
-            minIndex = cont; // Actualiza el índice del libro con menos páginas
+            minpages = cont; 
         }
         if (books[cont] > books[maxpages]) {
-            maxpages = cont; // Actualiza el índice del libro con más páginas
+            maxpages = cont; 
         }
     }
 
-    return [minpages, maxpages]; // Devuelve un array con los índices
+    return [minpages, maxpages];
 }
 
 
