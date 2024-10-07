@@ -49,7 +49,7 @@ console.log(buscaPalabras(words, 'mundo')) // El resultado debe ser: ['javascrip
 function findJavaScript(matrix) {
     for (let cont= 0; cont < matrix.length; cont=cont+1) {
         for (let cont2 = 0; cont2 < matrix[cont].length; cont2=cont2+1) {
-       if(matrix[cont][cont2]=="JavaScript"]){
+       if(matrix[cont][cont2]=="JavaScript"){
         return [cont,cont2]
        }
         }
